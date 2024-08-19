@@ -12,7 +12,6 @@ function Navbar () {
             <div className="navBar-item"><button>Mujeres</button></div>
             <div className="navBar-item"><button>Niños</button></div>
             <CartWidget/>
-            {/* <img src="../../assets/BANNER.jpg" alt=""/> */}
         </nav>
         </>
     )
