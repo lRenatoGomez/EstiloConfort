@@ -6,6 +6,5 @@ function ItemListContainer ({welcome, ad}) {
     </div>
     )
 }
-
 export default ItemListContainer
 
