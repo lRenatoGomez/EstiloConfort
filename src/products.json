@@ -1,0 +1,105 @@
+[
+{
+    "id": 1,
+    "name": "Championes de Hombre New Balance 574",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    "price": 5890,
+    "imageUrl": "./src/assets/products/men/newbalance574.webp",
+    "category": "Hombres"
+},
+{
+    "id": 2,
+    "name": "Championes de Hombre New Balance 530",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    "price": 5890,
+    "imageUrl": "./src/assets/products/men/newbalance530.webp",
+    "category": "Hombres"
+},
+{
+    "id": 3,
+    "name": "Championes Adidas Response Runner",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    "price": 3290,
+    "imageUrl": "./src/assets/products/men/championesadidasresponserunner.webp",
+    "category": "Hombres"
+},
+{
+    "id": 4,
+    "name": "Championes de Hombre New Balance 530",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    "price": 3990,
+    "imageUrl": "./src/assets/products/men/championespumacourt.webp",
+    "category": "Hombres"
+
+},
+{
+    "id": 5,
+    "name": "Championes Converse Run Star Hike Platform",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    "price": 5490,
+    "imageUrl": "./src/assets/products/women/championesconverserunstar.webp",
+    "category":"Mujeres"
+},
+{
+    "id": 6,
+    "name": "Championes Adidas Hoops",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    "price": 3990,
+    "imageUrl": "./src/assets/products/women/championesadidashoops.webp",
+    "category":"Mujeres"
+},
+{
+    "id": 7,
+    "name": "Championes Topper Boro Rosa",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    "price": 2290,
+    "imageUrl": "./src/assets/products/women/championestopperboro.webp",
+    "category":"Mujeres"
+},
+
+{
+    "id": 8,
+    "name": "Botas de Mujer Freeway Casual",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    "price": 2990,
+    "imageUrl": "./src/assets/products/women/botasfreewaycasual.webp",
+    "category":"Mujeres"
+},
+
+{
+    "id": 9,
+    "name": "Championes Adidas Tensaur Sport",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    "price": 2690,
+    "imageUrl": "./src/assets/products/child/championesadidastensaur.webp",
+    "category":"Niños"
+},
+
+{
+    "id": 10,
+    "name": "Championes Disney Frozen con Luces",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    "price": 1690,
+    "imageUrl": "./src/assets/products/child/championesdisneyfrozen.webp",
+    "category":"Niños"
+},
+
+{
+    "id": 11,
+    "name": "Championes KIDY PLAY",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    "price": 1990,
+    "imageUrl": "./src/assets/products/child/championeskidyplay.webp",
+    "category":"Niños"
+},
+
+{
+    "id": 12,
+    "name": "Championes Mini Miss Carol SMILEY",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    "price": 1490,
+    "imageUrl": "./src/assets/products/child/championesminimisscarol.webp",
+    "category":"Niños"
+}
+
+]
