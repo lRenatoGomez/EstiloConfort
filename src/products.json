@@ -1,37 +1,38 @@
 [
-{
-    "id": 1,
-    "name": "Championes de Hombre New Balance 574",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-    "price": 5890,
-    "imageUrl": "https://drive.google.com/file/d/1uqapNu3VimyKRIy7UEm48rnGf78xHOig/view?usp=sharing",
-    "category": "Hombres"
-},
-{
-    "id": 2,
-    "name": "Championes de Hombre New Balance 530",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-    "price": 5890,
-    "imageUrl": "https://drive.google.com/drive/u/0/folders/1F_oq0opP6ccDzi8oHmxG8ywFIR4sjTmx",
-    "category": "Hombres"
-},
-{
-    "id": 3,
-    "name": "Championes Adidas Response Runner",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-    "price": 3290,
-    "imageUrl": "https://drive.google.com/file/d/1XpLZEPh3aKmsGaU7UgbPHNWmasOdXYvo/view?usp=sharing",
-    "category": "Hombres"
-},
-{
-    "id": 4,
-    "name": "Championes Puma Court Classic",
-    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-    "price": 3990,
-    "imageUrl": "https://drive.google.com/file/d/1wkxAgc_RuPEjkNq_3PofpcR1RLu_tjOr/view?usp=sharing",
-    "category": "Hombres"
-
-},
+    {
+        "id": 1,
+        "name": "Championes de Hombre New Balance 574",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+        "price": 5890,
+        "imageUrl": "./src/assets/products/men/newbalance574.webp",
+        "category": "Hombres"
+    },
+    {
+        "id": 2,
+        "name": "Championes de Hombre New Balance 530",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+        "price": 5890,
+        "imageUrl": "./src/assets/products/men/newbalance530.webp",
+        "category": "Hombres"
+    },
+    {
+        "id": 3,
+        "name": "Championes Adidas Response Runner",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+        "price": 3290,
+        "imageUrl": "./src/assets/products/men/championesadidasresponserunner.webp",
+        "category": "Hombres"
+    },
+    {
+        "id": 4,
+        "name": "Championes de Hombre New Balance 530",
+        "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+        "price": 3990,
+        "imageUrl": "./src/assets/products/men/championespumacourt.webp",
+        "category": "Hombres"
+    
+    },
+    
 {
     "id": 5,
     "name": "Championes Converse Run Star Hike Platform",
