@@ -8,7 +8,7 @@ const ItemCards = ({product}) =>{
             <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
             {product && ( <img
                 alt={product.name}
-                src={`../${product.imageUrl}`}
+                src={product.imageUrl}
                 className="h-full w-full object-cover object-center group-hover:opacity-75"
             />)}
             </div>

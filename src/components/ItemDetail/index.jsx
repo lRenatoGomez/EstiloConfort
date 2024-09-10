@@ -11,7 +11,7 @@ const ItemDetail = ({ detail }) => {
         <div className="md:w-3/3 w-full mb-4 md:mb-0">
           <img
             className="w-full h-auto object-contain"
-            src={`../../${detail.imageUrl}`}
+            src={detail.imageUrl}
             alt={detail.name}
           />
         </div>
