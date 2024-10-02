@@ -1,17 +1,7 @@
 import ItemList from '../ItemsList/ItemsList.jsx'
 import {useState, useEffect} from "react";
-import { Link, useParams } from "react-router-dom";
-import productList from '../../products.json';
-
-
-const getProducts = () => {
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(productList);
-      }, 500); 
-    });
-  };
-
+import {useParams } from "react-router-dom";
+import {getProducts, getCategoryProduct} from '../../firebase/db.js';
 
 
 function ItemListContainer () {
@@ -20,12 +10,12 @@ function ItemListContainer () {
     const {category} = useParams ();
 
     useEffect(() => {
-        getProducts().then((response) => {
-          const filteredProducts = category
-            ? response.filter((product) => product.category === category)
-            : response;
-          setProducts(filteredProducts);
-        });
+        if (category){
+          getCategoryProduct(category,setProducts)
+        }
+        else{
+          getProducts(setProducts);
+        }
       }, [category]);
 
     return(

@@ -1,25 +1,14 @@
-import productList from "../../products.json";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ItemDetail from "../ItemDetail";
-
-const getProductById = (id) => {
-  return new Promise((resolve) => {
-    setTimeout(() => {
-      const product = productList.find((product) => product.id === parseInt(id));
-      resolve(product);
-    }, 500);
-  });
-};
+import { getSingleProduct } from "../../firebase/db";
 
 const ItemDetailContainer = () => {
   const [productId, setProductId] = useState(null);
   const { id } = useParams();
 
   useEffect(() => {
-    getProductById(id).then((product) => {
-      setProductId(product);
-    });
+    getSingleProduct(id, setProductId);
 
   }, [id]);
 

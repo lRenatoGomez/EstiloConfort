@@ -1,10 +1,12 @@
 
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import './App.jsx';
 import ItemListContainer from './components/ItemListContainer/index.jsx';
 import Navbar from './components/Navbar/Navbar.jsx';
 import ItemDetailContainer from './components/ItemDetailContainer/index.jsx';
+import CartContainer from './components/CartContainer';
+import Checkout from './components/Checkout/index.jsx';
 
 
 function App() {
@@ -15,7 +17,9 @@ function App() {
     <Routes>
     <Route path='/' element={<ItemListContainer/>}></Route>
     <Route path='/category/:category' element={<ItemListContainer/>}></Route>
-    <Route path='/category/:category/:id' element={<ItemDetailContainer/>}></Route>
+    <Route path='/product/:id' element={<ItemDetailContainer/>}></Route>
+    <Route path= '/cart' element={<CartContainer/>}/>
+    <Route path= '/checkout' element={<Checkout/>}/>
     </Routes>
     </BrowserRouter>
   )

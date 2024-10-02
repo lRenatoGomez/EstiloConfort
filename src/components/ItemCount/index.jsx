@@ -1,16 +1,33 @@
-import { useState } from "react"
 
+import { useState } from "react";
+import { useCartContext } from "../../context/cartContext";
+import { useNavigate } from "react-router-dom";
 
-const ItemCount = ({stock, initial, onAdd}) => {
-    
-    const [quantity, setQuantity] = useState(initial);
+const ItemCount = ({ detail }) => {
+  const [quantity, setQuantity] = useState(1);
+  const { addCart } = useCartContext();
+  const navigate = useNavigate();
 
-    const increment = () =>{ if (quantity < stock){ setQuantity(quantity+1) }};
-    const decrement = () =>{ if (quantity > 1){ setQuantity(quantity-1) }};
+  const increment = () => {
+    if (quantity < 15) {
+      setQuantity(quantity + 1);
+    }
+  };
 
-    return(
-        <>
-        <div className="flex gap-12 mt-12">
+  const decrement = () => {
+    if (quantity > 1) {
+      setQuantity(quantity - 1);
+    }
+  };
+
+  const handleAddToCart = () => {
+    addCart({ ...detail, count: quantity });
+    navigate("/");
+  };
+
+  return (
+    <>
+      <div className="flex gap-12 mt-12">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="w-5 p-0.5"
@@ -36,14 +53,15 @@ const ItemCount = ({stock, initial, onAdd}) => {
           </g>
         </svg>
       </div>
-  
-        <div className="flex justify-end md:justify-start">
-          <button className="bg-black text-white px-4 py-2 rounded hover:bg-blue-600" onClick={()=> console.log(`agregado al carrito ${quantity}`)}>
-            Agregar al carrito
-          </button>
-        </div>
-        </>
-    )
-}
 
-export default ItemCount
+      <div className="flex justify-end md:justify-start">
+        <button
+          className="bg-black text-white px-4 py-2 rounded hover:bg-blue-600"
+          onClick={handleAddToCart}>
+          Agregar al carrito
+        </button>
+      </div>
+    </>
+  );
+};
+export default ItemCount;

@@ -4,11 +4,11 @@ import { Link } from "react-router-dom"
 const ItemCards = ({product}) =>{
 
     return(
-        <Link to={`/category/${product?.category}/${product?.id}`} key={product.id} className="group">
+        <Link to={`/product/${product?.id}`} key={product.id} className="group">
             <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
             {product && ( <img
                 alt={product.name}
-                src={`.././${product.imageUrl}`}
+                src={product.imageUrl}
                 className="h-full w-full object-cover object-center group-hover:opacity-75"
             />)}
             </div>

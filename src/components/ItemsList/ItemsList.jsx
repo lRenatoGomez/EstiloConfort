@@ -1,4 +1,4 @@
-import ItemCard from '../ItemCard'
+import ItemCard from '../Item'
 
 const ItemList= ({products}) => {
 
