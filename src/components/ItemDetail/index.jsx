@@ -1,4 +1,3 @@
-
 import ItemCount from "../ItemCount/index"
 
 const ItemDetail = ({ detail }) => {
@@ -26,5 +25,4 @@ const ItemDetail = ({ detail }) => {
     </div>
   );
 };
-
 export default ItemDetail;

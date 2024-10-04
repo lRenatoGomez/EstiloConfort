@@ -1,13 +1,17 @@
-import {useContext} from "react";
+import {useContext, useState} from "react";
 import { cartContext } from "../../context/cartContext";
 import { createOrder } from "../../firebase/db";
 import { serverTimestamp } from "firebase/firestore";
+import ModalOrder from "../ModalOrder";
+
 
 const Checkout = () => {
-    const { cart } = useContext(cartContext);
+    const { cart, clearCart } = useContext(cartContext);
+    const [modalOpen, setModalOpen] = useState(false);
+    const [orderId, setOrderId] = useState(null);
     const total = cart.reduce((acc, item) => acc + item.price * item.count, 0);
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
         const name = e.target.name.value
         const phone = e.target.phone.value
@@ -19,13 +23,15 @@ const Checkout = () => {
             date: serverTimestamp(),
             total: total,
         }
-        createOrder(order)
+        const id = await createOrder(order);
+        setOrderId(id);
+        clearCart();
+        setModalOpen(true);
     }
 
   return (
     <div className="container mx-auto p-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {/* Formulario de la izquierda */}
         <div className="bg-white p-6 rounded-lg shadow-md">
           <h2 className="text-2xl font-bold mb-4">Datos para la Compra</h2>
           <form onSubmit={handleSubmit}>
@@ -69,8 +75,6 @@ const Checkout = () => {
             </button>
           </form>
         </div>
-
-        {/* Resumen de compra a la derecha */}
         <div className="bg-gray-100 p-6 rounded-lg shadow-md">
           <h2 className="text-2xl font-bold mb-4">Resumen de Compra</h2>
           <div className="mb-4">
@@ -89,8 +93,8 @@ const Checkout = () => {
           </div>
         </div>
       </div>
+      {modalOpen && <ModalOrder modalOpen={modalOpen} setModalOpen={setModalOpen} idOrder={orderId} />}
     </div>
   );
 };
-
 export default Checkout;

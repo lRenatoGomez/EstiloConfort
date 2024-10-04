@@ -3,8 +3,6 @@ import {app} from "./config";
 
 const db = getFirestore(app);
 
-
-
 export const getProducts = async (setProducts) => {
     const querySnapshot = await getDocs(collection(db, "products"));
     const products = [];
@@ -21,7 +19,6 @@ export const getSingleProduct = async (id, setProduct) =>{
     
     if (docSnap.exists()) {
       setProduct(docSnap.data());
-      console.log(docSnap.data())
     } else {
       console.log("No such document!");
     }
@@ -41,7 +38,7 @@ querySnapshot.forEach((doc) => {
 export const createOrder = async (order) => {
   try {
     const docRef = await addDoc(collection(db, "orders"), order);
-    console.log("Document written with ID: ", docRef.id);
+    return docRef.id;
   } catch (e) {
     console.error("Error adding document: ", e);
   }

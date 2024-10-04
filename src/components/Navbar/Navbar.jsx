@@ -1,5 +1,5 @@
 import { Disclosure, DisclosureButton } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { Link } from 'react-router-dom'
 import logo from "../../assets/Log.jpg";
 import { useCartContext } from '../../context/cartContext';

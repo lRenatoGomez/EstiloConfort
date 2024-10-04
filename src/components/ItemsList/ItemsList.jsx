@@ -1,4 +1,4 @@
-import ItemCard from '../Item'
+import ItemCard from '../Item';
 
 const ItemList= ({products}) => {
 
@@ -9,6 +9,5 @@ const ItemList= ({products}) => {
                 ))}
             </div>
         )
-
 }
 export default ItemList

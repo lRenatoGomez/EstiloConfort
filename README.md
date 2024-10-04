@@ -1,8 +1,22 @@
-# React + Vite
+# EstiloConfort
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+EstiloConfort es un ecommerce de venta de calzados, desarrollado con React en el frontend y Firebase como base de datos. El objetivo del proyecto es ofrecer una experiencia de usuario fluida, permitiendo a los clientes ver todos los productos, filtrarlos por categorías, agregar artículos al carrito y finalizar la compra.
 
-Currently, two official plugins are available:
+## Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Ver todos los productos**: Los usuarios pueden explorar todos los calzados disponibles en la tienda.
+- **Filtrar por categorías**: Los usuarios pueden filtrar productos por diferentes categorías como tipo de calzado, género, etc.
+- **Ver detalle de productos**: Cada producto tiene una página de detalle donde se muestra su descripción completa.
+- **Agregar productos al carrito**: Los usuarios pueden seleccionar productos y agregarlos al carrito para luego comprarlos.
+- **Finalizar compra**: Una vez que los productos están en el carrito, los usuarios pueden completar su compra.
+
+## Tecnologías utilizadas
+
+- **Frontend**: [React](https://react.dev/learn/describing-the-ui)
+- **Base de datos**: [Firebase](https://firebase.google.com/)
+
+## Instalación y uso
+
+1. Clona este repositorio:
+   ```bash
+   git clone https://github.com/lRenatoGomez/EstiloConfort.git
